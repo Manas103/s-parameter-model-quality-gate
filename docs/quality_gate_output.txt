@@ -1,0 +1,17 @@
+Clean models: 40. False rejects: 0.
+Claim: '0 false rejects on 40 clean models'. Measured: 0/40. met: True
+
+passivity_1_single_point_gain: caught=True failed_checks=['passivity']
+passivity_2_band_gain: caught=True failed_checks=['passivity']
+passivity_3_reflection_above_unity: caught=True failed_checks=['passivity']
+reciprocity_1_port12_asymmetry: caught=True failed_checks=['reciprocity']
+reciprocity_2_port13_offset: caught=True failed_checks=['passivity', 'reciprocity']
+reciprocity_3_port23_swap_and_scale: caught=True failed_checks=['reciprocity']
+causality_1_full_time_reversal: caught=True failed_checks=['causality']
+causality_2_single_pair_time_reversal: caught=True failed_checks=['passivity', 'reciprocity']
+causality_3_scrambled_phase: caught=True failed_checks=['passivity', 'reciprocity', 'causality']
+z0_1_port_mismatch: caught=True failed_checks=['reference_impedance']
+z0_2_frequency_drift: caught=True failed_checks=['reference_impedance']
+z0_3_reactive: caught=True failed_checks=['reference_impedance']
+
+Claim: '12 of 12 seeded defects caught'. Measured: 12/12. met: True

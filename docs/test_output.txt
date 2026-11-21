@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.2.0, pluggy-1.7.0 -- /mnt/c/Users/Manas/Downloads/Auto Job Applier/Total Job Application process flow/projects/s-parameter-model-quality-gate/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/c/Users/Manas/Downloads/Auto Job Applier/Total Job Application process flow
+configfile: pytest.ini
+collecting ... collected 13 items
+
+tests/test_checks.py::test_clean_models_pass_every_check PASSED          [  7%]
+tests/test_checks.py::test_all_12_seeded_defects_are_caught_by_some_check PASSED [ 15%]
+tests/test_checks.py::test_passivity_check_agrees_with_scikit_rf_is_passive PASSED [ 23%]
+tests/test_checks.py::test_reciprocity_check_agrees_with_scikit_rf_is_reciprocal PASSED [ 30%]
+tests/test_checks.py::test_causality_time_reversal_is_detected PASSED    [ 38%]
+tests/test_checks.py::test_reference_impedance_defects_are_detected PASSED [ 46%]
+tests/test_sweep.py::test_manifest_has_1152_corners PASSED               [ 53%]
+tests/test_sweep.py::test_manifest_is_bit_for_bit_reproducible PASSED    [ 61%]
+tests/test_sweep.py::test_manifest_corner_order_is_deterministic_itertools_product PASSED [ 69%]
+tests/test_sweep.py::test_droop_increases_with_esr_derating_all_else_fixed PASSED [ 76%]
+tests/test_sweep.py::test_droop_increases_as_regulator_bandwidth_decreases PASSED [ 84%]
+tests/test_sweep.py::test_anova_sum_of_squares_adds_up_to_total PASSED   [ 92%]
+tests/test_sweep.py::test_esr_derating_is_the_dominant_variance_source PASSED [100%]
+
+============================== 13 passed in 3.98s ==============================

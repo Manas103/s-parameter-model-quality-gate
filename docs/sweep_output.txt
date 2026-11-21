@@ -1,0 +1,18 @@
+Claim: '1,152-corner sweep over capacitor tolerance, ESR derating and regulator response'. Measured: 1152 corners (9 x 8 x 16). met: True
+
+Claim: 'reruns bit-for-bit from a pinned manifest'. Manifest sha256 (run 1): 1294dadc4314b6565efde14ae290bd3aac8514f4226fa072129bcf86498bc3cf
+Manifest sha256 (run 2, independent rebuild): 1294dadc4314b6565efde14ae290bd3aac8514f4226fa072129bcf86498bc3cf
+Bit-for-bit match: True. met: True
+
+Factorial ANOVA, droop variance across all 1,152 corners:
+                                source       sum_sq  pct_of_total
+                         cap_tolerance 3.856666e-01  2.451923e+01
+                          esr_derating 9.909043e-01  6.299797e+01
+                   regulator_bandwidth 1.929980e-01  1.227009e+01
+            cap_tolerance:esr_derating 2.761013e-30  1.755348e-28
+     cap_tolerance:regulator_bandwidth 3.345727e-03  2.127087e-01
+      esr_derating:regulator_bandwidth 5.089077e-30  3.235444e-28
+three_way_interaction_and_nonlinearity 9.272097e-16  5.894850e-14
+
+Worst-case (max) droop across the sweep: 0.320793 V
+Claim: 'factorial analysis attributes 62% of worst-case droop variance to ESR derating'. Measured: 63.00%. met (within 2 points): True
